@@ -1,0 +1,26 @@
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column: span 12;
+    grid-row: span 2;
+    background-color: darkslategrey;
+}
+
+footer p {
+    grid-column: span 12;
+    grid-row: span 2;
+    margin: auto auto;
+    font-size: auto;
+}
+
+@media screen and (min-device-width: 400px){
+    footer {
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column: span 20;
+        grid-row: span 1;
+        background-color: darkslategrey;
+    }
+}

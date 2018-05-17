@@ -1,4 +1,5 @@
 function toggleMenu(){
+    alert("hej")
     var element = document.querySelector(".menu_phone");
     element.classList.toggle("show");
 

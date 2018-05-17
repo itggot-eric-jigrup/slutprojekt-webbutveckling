@@ -1,0 +1,20 @@
+.nav-games {
+    height: 24px;
+    grid-column: span 12;
+    background-color: gray;
+}
+
+.nav-games p {
+    margin: 0;
+}
+
+.mario {
+    display: grid;
+    height: 80px;
+    grid-column: span 12; 
+    width: 270px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: grey;
+    margin: 20px auto auto auto;
+}

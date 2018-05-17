@@ -1,14 +1,43 @@
-.menu_phone {
+header i.material-icons{
+    font-size: 3em;
+    color: black;
+}
+
+.menu {
+    display: grid;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.menu_phone i.material-icons{    
+    font-size: 3em;
+    color: black;
+}
+
+.menu_phone{
     width: 80vw;
     height: 100vh;
-    background-color: gray;
     position: absolute;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: 48px 48px 48px;
+    display: none;
+    background-color: gray;
 }
 
-.show {
+.topside {
+    grid-row: span 1;
+    color: red;
+}
+
+.show{
     display: block;
 }
-
-.fade {
+// .fade{
     
+// }
+
+@media screen and (min-device-width: 400px){
+    .menu {
+        display: none;
+    }
 }

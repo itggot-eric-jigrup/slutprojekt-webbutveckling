@@ -15,6 +15,21 @@ header {
   grid-row: span 1;
   background-color: red; }
 
+.logo {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column: span 9;
+  grid-row: span 1; }
+
+.logo h1 {
+  font-family: 'Skranji', cursive;
+  margin: auto;
+  color: white; }
+
+.logo a {
+  color: white; }
+
 .console-link {
   display: none; }
 
@@ -86,20 +101,65 @@ header i.material-icons {
 
 .menu_phone i.material-icons {
   font-size: 3em;
-  color: black; }
+  color: black;
+  background: red;
+  margin: 0 0 0 0;
+  grid-column: span 1; }
 
 .menu_phone {
-  width: 80vw;
+  width: auto;
   height: 100vh;
   position: absolute;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: 48px 48px 48px;
   display: none;
-  background-color: gray; }
+  margin: 0 0 0 0; }
+
+.botside {
+  background-color: gray;
+  margin: 0;
+  height: 116px;
+  padding: 20px 0 0 0; }
+
+.button-console {
+  margin: 0 0 20px 0;
+  height: 48px;
+  background-color: red; }
+
+.button-console h1 {
+  margin: 0 0 0 0; }
+
+.button-console a {
+  color: white; }
+
+.button-games {
+  height: 48px;
+  background-color: red; }
+
+.button-games h1 {
+  margin: 0; }
+
+.button-games a {
+  color: white; }
 
 .topside {
   grid-row: span 1;
-  color: red; }
+  grid-column: span 16;
+  grid-template-columns: 48px auto;
+  grid-template-rows: repeat(1, 1fr);
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex; }
+
+.logo-menu h1 {
+  grid-row: span 1;
+  font-family: 'Skranji', cursive;
+  margin: auto;
+  color: white;
+  font-size: auto; }
+
+.logo-menu a {
+  color: white; }
 
 .show {
   display: block; }

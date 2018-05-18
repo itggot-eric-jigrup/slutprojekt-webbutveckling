@@ -1,3 +1,11 @@
+main {
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: span 12;
+    overflow: scroll;
+    height: calc(100vh - 72px);
+}
+
 .nav-games {
     height: 24px;
     grid-column: span 12;
@@ -16,5 +24,12 @@
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
     background-color: grey;
-    margin: 20px auto auto auto;
+    margin: 20px auto 0 auto;
+}
+
+.zelda {
+    display: none;
+}
+.kirby {
+    display: none;
 }

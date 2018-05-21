@@ -26,10 +26,124 @@ main {
     background-color: grey;
     margin: 20px auto 0 auto;
 }
+.image-mario {
+    display: grid;
+    grid-column: span 3;
+    grid-row: span 3;
+    width: 80px;
+    background-color: red;
+}
+.mario h1 {
+    display: grid;
+    grid-column: span 7;
+    grid-row: span 1;
+    font-size: auto;
+    margin: 0;
+}
+
+.mario p{
+    display: grid;
+    grid-column: span 7;
+    grid-row: span 2;
+    margin: 0;
+}
 
 .zelda {
-    display: none;
+    display: grid;
+    height: 80px;
+    grid-column: span 12; 
+    width: 270px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: grey;
+    margin: 20px auto 0 auto;
+}
+.image-zelda {
+    display: grid;
+    grid-column: span 3;
+    grid-row: span 3;
+    width: 80px;
+    background-color: red;
+}
+.zelda h1 {
+    display: grid;
+    grid-column: span 7;
+    grid-row: span 1;
+    font-size: auto;
+    margin: 0;
+}
+
+.zelda p{
+    display: grid;
+    grid-column: span 7;
+    grid-row: span 2;
+    margin: 0;
 }
 .kirby {
-    display: none;
+    display: grid;
+    height: 80px;
+    grid-column: span 12; 
+    width: 270px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: grey;
+    margin: 20px auto 0 auto;
+}
+.image-kirby {
+    display: grid;
+    grid-column: span 3;
+    grid-row: span 3;
+    width: 80px;
+    background-color: red;
+}
+.kirby h1 {
+    display: grid;
+    grid-column: span 7;
+    grid-row: span 1;
+    font-size: auto;
+    margin: 0;
+}
+
+.kirby p{
+    display: grid;
+    grid-column: span 7;
+    grid-row: span 2;
+    margin: 0;
+}
+.metroid {
+    display: grid;
+    height: 80px;
+    grid-column: span 12; 
+    width: 270px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: grey;
+    margin: 20px auto 0 auto;
+}
+.image-metroid {
+    display: grid;
+    grid-column: span 3;
+    grid-row: span 3;
+    width: 80px;
+    background-color: red;
+}
+.metroid h1 {
+    display: grid;
+    grid-column: span 7;
+    grid-row: span 1;
+    font-size: auto;
+    margin: 0;
+}
+
+.metroid p{
+    display: grid;
+    grid-column: span 7;
+    grid-row: span 2;
+    margin: 0;
+}
+
+.filler-main-game {
+    display: grid;
+    height: 20px;
+    grid-column: span 12;
 }

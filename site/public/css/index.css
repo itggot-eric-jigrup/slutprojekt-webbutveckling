@@ -244,7 +244,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   margin: 10px auto auto auto;
-  background-image: url("../img/OdysseyDonenow.png");
+  background-image: url("../img/Luigi Odyssey.jpg");
   background-size: contain; }
 
 .info_bar2 {
@@ -287,17 +287,18 @@ main {
     grid-row: span 11; }
 
   .main-wrapper-index {
+    display: grid;
     grid-column: span 14;
     grid-row: span 11;
-    grid-template-columns: repeat(20, 1fr); }
+    grid-template-columns: auto auto; }
 
   .nyhet1 {
-    display: inline-block;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
     margin: 20px;
     height: 452.68px;
     width: 679px;
+    grid-column: span 1;
     background-image: url("../img/Doomswitch.png");
     background-size: cover; }
 
@@ -307,6 +308,7 @@ main {
 
   .wrapper-nyhet {
     display: inline-block;
+    grid-column: span 1;
     height: 452.68px;
     width: 324.51px;
     margin-top: 20px;
@@ -319,7 +321,7 @@ main {
     height: 216.34px;
     width: 324.51px;
     margin: 0 auto auto auto;
-    background-image: url("../img/OdysseyDonenow.png");
+    background-image: url("../img/Luigi Odyssey.jpg");
     background-size: cover; }
 
   .info_bar2 {
@@ -620,7 +622,7 @@ footer p {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: red;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -684,3 +686,21 @@ footer p {
 .faktatext {
   grid-column: span 12;
   text-align: center; }
+
+@media screen and (min-device-width: 400px) {
+  .slideshow-container {
+    width: 27vw;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    position: relative;
+    margin: 20px auto 10px auto; }
+
+  .dots {
+    grid-column: span 20; }
+
+  .faktatext {
+    grid-column-start: 10;
+    grid-column-end: 16;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column: span 20; } }

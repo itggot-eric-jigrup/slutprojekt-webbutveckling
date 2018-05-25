@@ -18,7 +18,7 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: red;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -94,5 +94,21 @@
 }
 
 @media screen and (min-device-width: 400px){
-
+    .slideshow-container {
+        width: 27vw;
+        grid-column-start: 4;
+        grid-column-end: 10;
+        position: relative;
+        margin: 20px auto 10px auto;
+      }      
+      .dots {
+        grid-column: span 20;
+    }
+    .faktatext {
+        grid-column-start: 10;
+        grid-column-end: 16; 
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column: span 20;
+    }
 }

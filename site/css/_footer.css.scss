@@ -23,4 +23,8 @@ footer p {
         grid-row: span 1;
         background-color: darkslategrey;
     }
+    footer p {
+        grid-column: span 20;
+        height: 39.6px;
+    }
 }

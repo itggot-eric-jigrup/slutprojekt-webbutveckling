@@ -19,11 +19,13 @@ header i.material-icons{
 
 .menu_phone{
     width: auto;
+    z-index: 100;
     height: 100vh;
     position: absolute;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: 48px 48px 48px;
-    display: none;
+    transform: translateX(-100%);
+    transition: transform 1s;
     margin: 0 0 0 0;
 }
 
@@ -84,7 +86,11 @@ header i.material-icons{
 }
 
 .show{
-    display: block;
+    transform: translateX(0);
+    // display: block;
+    // width: auto;
+    // transition: width 2s;
+    // -moz-transition: width 2s;
 }
 // .fade{
     

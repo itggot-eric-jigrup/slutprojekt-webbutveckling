@@ -7,7 +7,13 @@ main {
     overflow: scroll;
     height: calc(100vh - 72px);
 }
-
+.whitespace1 {
+    display: none;
+}
+.main-wrapper-index {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: span 12;
+}
 .nyhet1 {
     display: grid;
     grid-column: span 12;
@@ -16,7 +22,8 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     margin: 20px auto 10px auto;
-    background-color: gray;
+    background-image: url("../img/Doomswitch.png");
+    background-size: contain;
 }
 
 .info_bar1 {
@@ -39,7 +46,10 @@ main {
     grid-row: span 2;
     margin: 0;
 }
-
+.wrapper-nyhet {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: span 12;
+}
 .nyhet2 {
     display: grid;
     grid-column: span 12;
@@ -48,7 +58,8 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     margin: 10px auto auto auto;
-    background-color: gray;
+    background-image: url("../img/OdysseyDonenow.png");
+    background-size: contain;
 }
 
 .info_bar2 {
@@ -71,6 +82,9 @@ main {
     grid-row: span 2;
     margin: 0;
 }
+.nyhet3 {
+    display: none;
+}
 
 .fillingunder {
     grid-column: span 12;
@@ -78,31 +92,67 @@ main {
 }
 
 @media screen and (min-device-width: 400px){
-    main {
-        display: grid; 
+    main { 
         grid-template-columns: repeat(20, 1fr);
         grid-template-rows: repeat(11, 1fr);
         grid-column: span 20;
         grid-row: span 11;
+        height: calc(100vh - 118.8px);
+    }
+    .whitespace1 {
+        display: block;
+        grid-column: span 3;
+        grid-row: span 11;
+    }
+    .main-wrapper-index {
+        grid-column: span 14;
+        grid-row: span 11;
+        grid-template-columns: repeat(20, 1fr);
     }
     .nyhet1 {
-        display: grid;
-        grid-template-columns: repeat(20, 1fr);
-        grid-template-rows: repeat(14, 1fr);
-        grid-column-start: 4;
-        grid-row-start: 2;
-        grid-column-end: 12;
-        grid-row-end: 11;
-        background-color: darkred;
+        display: inline-block;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 20px;
+        height: 452.68px;
+        width: 679px;
+        background-image: url("../img/Doomswitch.png");
+        background-size: cover;
+    }
+    .info_bar1 {
+        background-color: transparent;
+        margin: auto 0 0 0;
+    }
+    .wrapper-nyhet {
+        display: inline-block;
+        height: 452.68px;
+        width: 324.51px;
+        margin-top: 20px;
+        grid-template-columns: repeat(1, 1fr);
     }
     .nyhet2 {
         display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        height: 216.34px;
+        width: 324.51px;
+        margin: 0 auto auto auto;
+        background-image: url("../img/OdysseyDonenow.png");
+        background-size: cover;
+    }
+    .info_bar2 {
+        background-color: transparent;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .nyhet3 {
+        display: block;
         grid-template-columns: repeat(20, 1fr);
         grid-template-rows: repeat(14, 1fr);
-        grid-column-start: 13;
-        grid-row-start: 2;
-        grid-column-end: 18;
-        grid-row-end: 7;
+        height: 216.34px;
+        width: 324.51px;
         background-color: darkred;
     }
 }
+
+

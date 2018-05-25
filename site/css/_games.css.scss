@@ -1,10 +1,4 @@
-main {
-    display: grid; 
-    grid-template-columns: repeat(12, 1fr);
-    grid-column: span 12;
-    overflow: scroll;
-    height: calc(100vh - 72px);
-}
+
 
 .nav-games {
     height: 24px;
@@ -15,7 +9,10 @@ main {
 .nav-games p {
     margin: 0;
 }
-
+.main-wrapper-games {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: span 12;
+}
 .mario {
     display: grid;
     height: 80px;
@@ -30,12 +27,13 @@ main {
     display: grid;
     grid-column: span 3;
     grid-row: span 3;
-    width: 80px;
-    background-color: red;
+    width: auto;
+    background-image: url("../img/Mario.png");
+    background-size: cover;
 }
 .mario h1 {
     display: grid;
-    grid-column: span 7;
+    grid-column: span 5;
     grid-row: span 1;
     font-size: auto;
     margin: 0;
@@ -43,9 +41,17 @@ main {
 
 .mario p{
     display: grid;
-    grid-column: span 7;
+    grid-column: span 5;
     grid-row: span 2;
     margin: 0;
+}
+.pointermario {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: auto; height: auto;
+    background: url('../img/css_sprites.png') -10px -10px;
 }
 
 .zelda {
@@ -62,12 +68,13 @@ main {
     display: grid;
     grid-column: span 3;
     grid-row: span 3;
-    width: 80px;
-    background-color: red;
+    width: auto;
+    background-image: url("../img/zelda.png");
+    background-size: cover;
 }
 .zelda h1 {
     display: grid;
-    grid-column: span 7;
+    grid-column: span 5;
     grid-row: span 1;
     font-size: auto;
     margin: 0;
@@ -75,9 +82,17 @@ main {
 
 .zelda p{
     display: grid;
-    grid-column: span 7;
+    grid-column: span 5;
     grid-row: span 2;
     margin: 0;
+}
+.pointerzelda {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: auto; height: auto;
+    background: url('../img/css_sprites.png') -10px -10px;
 }
 .kirby {
     display: grid;
@@ -93,12 +108,13 @@ main {
     display: grid;
     grid-column: span 3;
     grid-row: span 3;
-    width: 80px;
-    background-color: red;
+    width: auto;
+    background-image: url("../img/kirbyresize.png");
+    background-size: cover;
 }
 .kirby h1 {
     display: grid;
-    grid-column: span 7;
+    grid-column: span 5;
     grid-row: span 1;
     font-size: auto;
     margin: 0;
@@ -106,9 +122,17 @@ main {
 
 .kirby p{
     display: grid;
-    grid-column: span 7;
+    grid-column: span 5;
     grid-row: span 2;
     margin: 0;
+}
+.pointerkirby {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: auto; height: auto;
+    background: url('../img/css_sprites.png') -10px -10px;
 }
 .metroid {
     display: grid;
@@ -124,12 +148,13 @@ main {
     display: grid;
     grid-column: span 3;
     grid-row: span 3;
-    width: 80px;
-    background-color: red;
+    width: auto;
+    background-image: url("../img/metroid.png");
+    background-size: cover;
 }
 .metroid h1 {
     display: grid;
-    grid-column: span 7;
+    grid-column: span 5;
     grid-row: span 1;
     font-size: auto;
     margin: 0;
@@ -137,13 +162,88 @@ main {
 
 .metroid p{
     display: grid;
-    grid-column: span 7;
+    grid-column: span 5;
     grid-row: span 2;
     margin: 0;
+}
+.pointermetroid {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: auto; height: auto;
+    background: url('../img/css_sprites.png') -10px -10px;
 }
 
 .filler-main-game {
     display: grid;
     height: 20px;
     grid-column: span 12;
+}
+
+@media screen and (min-device-width: 400px){
+    .nav-games {
+        height: 24px;
+        grid-column: span 20;
+        background-color: gray;
+    }
+    .main-wrapper-games {
+        display: grid;
+        grid-column: span 14;
+        grid-row: span 11;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+    }
+    .mario {
+        display: grid;
+        height: auto;
+        width: auto;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-column-end: 7;
+        grid-row-end: 6;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        background-color: grey;
+        margin: 0;
+    }
+    .zelda {
+        display: grid;
+        height: auto;
+        width: auto;
+        grid-column-start: 9;
+        grid-row-start: 2;
+        grid-column-end: 15;
+        grid-row-end: 6;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        background-color: grey;
+        margin: 0;
+    }
+    .kirby {
+        display: grid;
+        height: auto;
+        width: auto;
+        grid-column-start: 1;
+        grid-row-start: 7;
+        grid-column-end: 7;
+        grid-row-end: 11;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        background-color: grey;
+        margin: 0;
+    }
+    .metroid {
+        display: grid;
+        height: auto;
+        width: auto;
+        grid-column-start: 9;
+        grid-row-start: 7;
+        grid-column-end: 15;
+        grid-row-end: 11;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        background-color: grey;
+        margin: 0;
+    }
 }
